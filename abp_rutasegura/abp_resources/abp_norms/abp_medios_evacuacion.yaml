@@ -1,0 +1,78 @@
+reglas:
+  - id: EVA-PUERTA-POR-PERSONA
+    tipo: ancho_por_persona
+    descripcion: Ancho total de puertas de un ambiente según sus ocupantes
+    elemento: puerta
+    metros_por_persona: 0.005
+    norma: RNE A.130
+    articulo: Art. 22
+    verificado: false
+    recomendacion: >-
+      Ensanche las puertas del ambiente o agregue otra puerta para que las personas salgan
+      sin formar filas.
+
+  - id: EVA-SALIDA-POR-PERSONA
+    tipo: ancho_por_persona
+    descripcion: Ancho total de las salidas del local según sus ocupantes
+    elemento: salida
+    metros_por_persona: 0.005
+    norma: RNE A.130
+    articulo: Art. 22
+    verificado: false
+    recomendacion: >-
+      Ensanche las salidas existentes o habilite otra salida al exterior o a una zona segura.
+
+  - id: EVA-PUERTA-MINIMO
+    tipo: ancho_minimo
+    descripcion: Ancho libre mínimo de puertas de evacuación
+    elemento: puerta
+    metros: 0.90
+    norma: RNE A.130
+    articulo: Art. 5
+    verificado: false
+    recomendacion: >-
+      Ensanche la puerta o retire lo que reduzca su paso libre (hojas fijas, muebles).
+
+  - id: EVA-SALIDA-MINIMO
+    tipo: ancho_minimo
+    descripcion: Ancho libre mínimo de salidas
+    elemento: salida
+    metros: 1.00
+    norma: RNE A.130
+    articulo: Art. 5
+    verificado: false
+    recomendacion: >-
+      Ensanche la salida o mantenga abiertas ambas hojas de la puerta durante la jornada.
+
+  - id: EVA-PASILLO-MINIMO
+    tipo: ancho_minimo
+    descripcion: Ancho libre mínimo de pasillos de evacuación
+    elemento: pasillo
+    metros: 1.20
+    norma: RNE A.130
+    articulo: Art. 22
+    verificado: false
+    recomendacion: >-
+      Retire obstáculos del pasillo o busque una ruta de evacuación más ancha.
+
+  - id: EVA-ANTIPANICO
+    tipo: barra_antipanico
+    descripcion: Barra antipánico en puertas de ambientes con muchas personas
+    umbral_personas: 100
+    norma: RNE A.130
+    articulo: Art. 5
+    verificado: false
+    recomendacion: >-
+      Verifique que las puertas de evacuación de este ambiente tengan barra antipánico y abran
+      en el sentido de la evacuación.
+
+  - id: EVA-DISTANCIA-RECORRIDO
+    tipo: distancia_recorrido
+    descripcion: Distancia máxima de recorrido hasta una salida o zona segura
+    metros: 45.0
+    norma: RNE A.130
+    articulo: Art. 13
+    verificado: false
+    recomendacion: >-
+      Habilite una salida más cercana a este ambiente, abra una ruta más directa o reubique a
+      las personas que están en el sector más alejado.

@@ -1,0 +1,169 @@
+reglas:
+  - id: OCU-EDU-BANOS
+    tipo: indice_ocupacion
+    descripcion: Servicios higiénicos, sin aforo propio (sus usuarios ya se cuentan en otros ambientes)
+    uso: educacion
+    categoria: banos
+    etiqueta: Servicios higiénicos (baños)
+    m2_por_persona: null
+    norma: RNE A.040
+    articulo: VERIFICAR
+    verificado: false
+    recomendacion: >-
+      Mantenga las puertas de los servicios higiénicos libres y señalizadas.
+  - id: OCU-EDU-DEPOSITO
+    tipo: indice_ocupacion
+    descripcion: Depósitos y almacenes, sin aforo propio en esta versión
+    uso: educacion
+    categoria: deposito
+    etiqueta: Depósito o almacén
+    m2_por_persona: null
+    norma: RNE A.040
+    articulo: VERIFICAR
+    verificado: false
+    recomendacion: >-
+      No obstruya las rutas de evacuación con mercadería o materiales almacenados.
+  - id: OCU-EDU-PATIO
+    tipo: indice_ocupacion
+    descripcion: Patios y áreas abiertas, sin aforo propio (suelen ser zona segura)
+    uso: educacion
+    categoria: patio
+    etiqueta: Patio o área abierta
+    m2_por_persona: null
+    norma: RNE A.040
+    articulo: VERIFICAR
+    verificado: false
+    recomendacion: >-
+      Si el patio es zona segura, márquelo como tal en el paso 3 y manténgalo despejado.
+  - id: OCU-EDU-COCINA
+    tipo: indice_ocupacion
+    descripcion: Índice de ocupación de cocinas
+    uso: educacion
+    categoria: cocina
+    etiqueta: Cocina
+    m2_por_persona: 9.3
+    norma: RNE A.040
+    articulo: VERIFICAR
+    verificado: false
+    recomendacion: >-
+      Reduzca el personal simultáneo en la cocina o amplíe el área de trabajo.
+  - id: OCU-EDU-COMEDOR
+    tipo: indice_ocupacion
+    descripcion: Índice de ocupación de comedores y cafeterías
+    uso: educacion
+    categoria: comedor
+    etiqueta: Comedor o cafetería
+    m2_por_persona: 1.5
+    norma: RNE A.040
+    articulo: VERIFICAR
+    verificado: false
+    recomendacion: >-
+      Organice turnos para que el comedor no supere el aforo calculado.
+  - id: OCU-OFI-BANOS
+    tipo: indice_ocupacion
+    descripcion: Servicios higiénicos, sin aforo propio (sus usuarios ya se cuentan en otros ambientes)
+    uso: oficinas
+    categoria: banos
+    etiqueta: Servicios higiénicos (baños)
+    m2_por_persona: null
+    norma: RNE A.080
+    articulo: VERIFICAR
+    verificado: false
+    recomendacion: >-
+      Mantenga las puertas de los servicios higiénicos libres y señalizadas.
+  - id: OCU-OFI-DEPOSITO
+    tipo: indice_ocupacion
+    descripcion: Depósitos y almacenes, sin aforo propio en esta versión
+    uso: oficinas
+    categoria: deposito
+    etiqueta: Depósito o almacén
+    m2_por_persona: null
+    norma: RNE A.080
+    articulo: VERIFICAR
+    verificado: false
+    recomendacion: >-
+      No obstruya las rutas de evacuación con mercadería o materiales almacenados.
+  - id: OCU-OFI-PATIO
+    tipo: indice_ocupacion
+    descripcion: Patios y áreas abiertas, sin aforo propio (suelen ser zona segura)
+    uso: oficinas
+    categoria: patio
+    etiqueta: Patio o área abierta
+    m2_por_persona: null
+    norma: RNE A.080
+    articulo: VERIFICAR
+    verificado: false
+    recomendacion: >-
+      Si el patio es zona segura, márquelo como tal en el paso 3 y manténgalo despejado.
+  - id: OCU-OFI-COCINA
+    tipo: indice_ocupacion
+    descripcion: Índice de ocupación de cocinas
+    uso: oficinas
+    categoria: cocina
+    etiqueta: Cocina
+    m2_por_persona: 9.3
+    norma: RNE A.080
+    articulo: VERIFICAR
+    verificado: false
+    recomendacion: >-
+      Reduzca el personal simultáneo en la cocina o amplíe el área de trabajo.
+  - id: OCU-COM-BANOS
+    tipo: indice_ocupacion
+    descripcion: Servicios higiénicos, sin aforo propio (sus usuarios ya se cuentan en otros ambientes)
+    uso: comercio
+    categoria: banos
+    etiqueta: Servicios higiénicos (baños)
+    m2_por_persona: null
+    norma: RNE A.070
+    articulo: VERIFICAR
+    verificado: false
+    recomendacion: >-
+      Mantenga las puertas de los servicios higiénicos libres y señalizadas.
+  - id: OCU-COM-DEPOSITO
+    tipo: indice_ocupacion
+    descripcion: Depósitos y almacenes, sin aforo propio en esta versión
+    uso: comercio
+    categoria: deposito
+    etiqueta: Depósito o almacén
+    m2_por_persona: null
+    norma: RNE A.070
+    articulo: VERIFICAR
+    verificado: false
+    recomendacion: >-
+      No obstruya las rutas de evacuación con mercadería o materiales almacenados.
+  - id: OCU-COM-PATIO
+    tipo: indice_ocupacion
+    descripcion: Patios y áreas abiertas, sin aforo propio (suelen ser zona segura)
+    uso: comercio
+    categoria: patio
+    etiqueta: Patio o área abierta
+    m2_por_persona: null
+    norma: RNE A.070
+    articulo: VERIFICAR
+    verificado: false
+    recomendacion: >-
+      Si el patio es zona segura, márquelo como tal en el paso 3 y manténgalo despejado.
+  - id: OCU-COM-COCINA
+    tipo: indice_ocupacion
+    descripcion: Índice de ocupación de cocinas
+    uso: comercio
+    categoria: cocina
+    etiqueta: Cocina
+    m2_por_persona: 9.3
+    norma: RNE A.070
+    articulo: VERIFICAR
+    verificado: false
+    recomendacion: >-
+      Reduzca el personal simultáneo en la cocina o amplíe el área de trabajo.
+  - id: OCU-COM-MESAS
+    tipo: indice_ocupacion
+    descripcion: Índice de ocupación de áreas de mesas de restaurantes
+    uso: comercio
+    categoria: mesas
+    etiqueta: Restaurante, área de mesas o barra
+    m2_por_persona: 1.5
+    norma: RNE A.070
+    articulo: VERIFICAR
+    verificado: false
+    recomendacion: >-
+      Controle el ingreso de comensales para no superar el aforo calculado.
