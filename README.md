@@ -1,4 +1,3 @@
-# AppRutaSegura
 
 El instalador/ejecutable para Windows (`.zip` con el `.exe`) y un archivo DWG de ejemplo para hacer la prueba están disponibles en Google Drive:
 
