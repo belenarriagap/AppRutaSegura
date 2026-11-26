@@ -1,0 +1,59 @@
+[project]
+name = "abp-rutasegura"
+version = "0.1.0"
+description = "Simulación offline de evacuación ante sismos a partir del plano 2D de un local."
+requires-python = "==3.12.*"
+dependencies = [
+    "alembic>=1.20.1",
+    "ezdxf>=1.4.5",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "opencv-python-headless>=5.0.0.93",
+    "pymupdf>=2.1",
+    "pyside6-essentials>=6.12.0",
+    "pyyaml>=6.0.3",
+    "reportlab>=5.1.0",
+    "sqlalchemy>=2.1.8",
+]
+
+[project.scripts]
+abp-rutasegura = "abp_rutasegura.__main__:abp_main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["abp_rutasegura"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+src = ["."]
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "UP", "B", "SIM", "NPY", "PT", "TID"]
+ignore = ["E402", "E501", "B007", "B009", "PT006"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["abp_rutasegura", "abp_tests"]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["abp_tests"]
+python_files = ["abp_test_*.py"]
+python_classes = ["abpTest*"]
+python_functions = ["abp_test_*"]
+addopts = ["--disable-socket", "--strict-markers", "-ra"]
+markers = ["benchmark: pruebas de rendimiento (lentas)"]
+qt_api = "pyside6"
+
+[dependency-groups]
+dev = [
+    "pyinstaller>=6.22.3",
+    "pytest>=9.2.0",
+    "pytest-cov>=7.1.0",
+    "pytest-qt>=4.5.0",
+    "pytest-socket>=0.8.1",
+    "ruff>=0.17.4",
+]
